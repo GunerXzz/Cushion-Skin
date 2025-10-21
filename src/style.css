@@ -289,7 +289,15 @@ body {
 }
 
 .quantity-input[type=number] {
-  -moz-appearance: textfield;
+-webkit-appearance: textfield;
+appearance: textfield;
+-moz-appearance: textfield;
+
+/* Prevent WebKit autofill yellow and ensure consistent background/text */
+transition: background-color 5000s ease-in-out 0s;
+-webkit-box-shadow: 0 0 0px 1000px var(--bg-white) inset;
+box-shadow: 0 0 0px 1000px var(--bg-white) inset;
+-webkit-text-fill-color: var(--text-primary);
 }
 
 /* ============================================
