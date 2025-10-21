@@ -18,6 +18,7 @@
   --border-color: #e5e7eb;
   --bg-light: #f9fafb;
   --bg-white: #ffffff;
+  --logo-txt : #faa8f3;
 
   /* Discount colors */
   --discount-2: #dcfce7;
@@ -94,7 +95,8 @@ body {
 }
 
 .logo-text {
-  color: var(--text-primary);
+  color: var(--logo-txt);
+  font-weight: 5    00;
 }
 
 .logo-divider {
@@ -138,7 +140,7 @@ body {
 .product-image-wrapper {
   width: 100%;
   max-width: 380px;
-  aspect-ratio: 3/4;
+  aspect-ratio: 2/4;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);

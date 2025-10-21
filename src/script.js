@@ -101,13 +101,11 @@
   });
 
   addToCartBtn.addEventListener('click', () => {
-    const q = clampQty(qtyInput.value);
-    alert(`${q} item(s) added to cart — Total: ${totalPriceEl.textContent}`);
+   
   });
 
   buyNowBtn.addEventListener('click', () => {
-    const q = clampQty(qtyInput.value);
-    alert(`Proceed to buy ${q} item(s) — Total: ${totalPriceEl.textContent}`);
+    // No alert — let the anchor's default navigation/behavior happenz
   });
 
   // initial render
