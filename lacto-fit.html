@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lacto-Fit Probiotics | Cushion Skin</title>
+    <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">Cushion Skin Official</span>
+                </div>
+                <nav class="nav" aria-label="Primary">
+                    <a href="./index.html" class="nav-link">Home</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Product Image -->
+                <div class="product-image-section">
+                    <div class="product-image-wrapper">
+                        <img src="src/img/lactofitslim.jpg" alt="Lacto-Fit Probiotics Slim" class="product-image" />
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="product-details-section">
+                    <div class=> </div>
+
+                    <h1 class="product-title">LACTO-FIT PROBIOTICS SLIM</h1>
+
+                    <p class="product-description">60 Sticks</p>
+
+                    <div class="product-price">
+                        <span class="price-amount" id="displayPrice">$13.50</span>
+
+                        <span class="price-currency">USD</span>
+                        <span class="price-per">/ 1</span>
+                    </div>
+
+                    <!-- Quantity Selector -->
+                    <div class="quantity-section">
+                        <label class="quantity-label">Quantity</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" id="decreaseBtn" aria-label="Decrease quantity">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <input type="number" class="quantity-input" id="quantityInput" value="1" min="1"
+                                aria-label="Quantity" />
+                            <button class="quantity-btn" id="increaseBtn" aria-label="Increase quantity">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="product-card-actions">
+                        <button class="btn btn-primary" id="addToCartBtn" type="button">
+
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M3 3h2l.4 2m0 0h13.2l-1.6 8H6.4m0-8l1.2 6m0 0h8m-8 0L5 17m4-4a1 1 0 100 2 1 1 0 000-2zm9 0a1 1 0 100 2 1 1 0 000-2z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Add to cart
+                        </button>
+
+                        <a class="btn btn-success" id="buyNowBtn" href="https://t.me/cushionskin" target="_blank"
+                            rel="noopener noreferrer" role="button" aria-label="Buy it now" style="text-decoration: none;">
+                            Buy it now
+                        </a>
+                    </div>
+
+                    <!-- Bulk Pricing -->
+                    <div class="bulk-pricing">
+                        <div class="bulk-pricing-header">
+                            <span class="star"></span>
+                            <span class="bulk-pricing-title">Buy More, Save More!</span>
+                            <span class="star"></span>
+                        </div>
+
+                        <div class="pricing-table">
+                            <div class="pricing-table-header">
+                                <div>Quantity</div>
+                                <div>Discount</div>
+                                <div>Price Each</div>
+                            </div>
+
+                            <div class="pricing-row" data-min-qty="20">
+                                <div class="qty-text">Buy 20+</div>
+                                <div>
+                                    <span class="discount-badge discount-2">2%</span>
+                                </div>
+                                <div class="price-text">$13.23 USD</div>
+                            </div>
+
+                            <div class="pricing-row" data-min-qty="50">
+                                <div class="qty-text">Buy 50+</div>
+                                <div>
+                                    <span class="discount-badge discount-3">3%</span>
+                                </div>
+                                <div class="price-text">$13.09 USD</div>
+                            </div>
+
+                            <div class="pricing-row" data-min-qty="100">
+                                <div class="qty-text">Buy 100+</div>
+                                <div>
+                                    <span class="discount-badge discount-4">4%</span>
+                                </div>
+                                <div class="price-text">$12.96 USD</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Total Price Display -->
+                    <div class="total-section" id="totalSection">
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$13.50</span>
+                        </div>
+                        <div class="total-row discount-applied" id="discountRow" style="display: none;">
+                            <span>Discount:</span>
+                            <span id="discountAmount">-$0.00</span>
+                        </div>
+                        <div class="total-row total-final">
+                            <span>Total:</span>
+                            <span id="totalPrice">$13.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/script.js" defer></script>
+</body>
+
+</html>
