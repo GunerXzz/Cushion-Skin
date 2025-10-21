@@ -1,170 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lacto-Fit Probiotics | Cushion Skin</title>
-  <link rel="stylesheet" href="src/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cushion Skin — Premium Health Products</title>
+  <link rel="icon" href="src/img/logo.jpg" type="src/img/logo.jpg">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="style.css">
+  
 </head>
-
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">
-          <span class="logo-text">Cushion Skin Official</span>
-          <span class="logo-divider">×</span>
-          <span class="logo-brand">Beaurify</span>
-        </div>
+    <div class="container header-content">
+      <div class="logo" aria-hidden="true">
+        <span class="logo-text">Cushion Skin Official</span>
       </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#products" class="nav-link">Products</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="main">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title animate-fade-in-up">Premium Health & Wellness</h1>
+      <p class="hero-subtitle animate-fade-in-up delay-1">Discover our carefully crafted products designed to enhance your well-being and vitality</p>
+      <a href="#products" class="btn-hero animate-fade-in-up delay-2">Explore Products</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section">
     <div class="container">
-      <div class="product-layout">
-        <!-- Product Image -->
-        <div class="product-image-section">
-          <div class="product-image-wrapper">
-            <img
-              src="src/img/lactofitslim.jpg"    
-              alt="Lacto-Fit Probiotics Slim"
-              class="product-image"
-            />
+      <h2 class="section-title animate-fade-in-up">Our Products</h2>
+      <div class="products-grid">
+        <!-- Foodology Product Card -->
+        <div class="product-card animate-fade-in-up">
+          <img src="src/img/foodology.jpg" alt="Foodology product" class="product-card-image">
+          <div class="product-card-content">
+            <h3 class="product-card-title">FOODOLOGY</h3>
+            <p class="product-card-description">Premium health supplement in convenient 10-pouch packaging. Formulated to support digestive health and overall wellness.</p>
+            <div class="product-card-price">$9.99</div>
+            <div class="product-card-actions">
+              <a href="product/foodology.html" class="btn-card btn-card-primary">View Details</a>
+              <a href="https://t.me/cushionskin" target="_blank" class="btn-card btn-card-secondary">Buy Now</a>
+            </div>
           </div>
         </div>
 
-        <!-- Product Details -->
-        <div class="product-details-section">
-          <div class=> </div>
-        
-          <h1 class="product-title">LACTO-FIT PROBIOTICS SLIM</h1>
-
-          <p class="product-description">60 Sticks</p>
-        
-          <div class="product-price">
-            <span class="price-amount" id="displayPrice">$13.50</span>
-            
-            <span class="price-currency">USD</span>
-            <span class="price-per">/ 1</span>
-          </div>
-
-          <!-- Quantity Selector -->
-          <div class="quantity-section">
-            <label class="quantity-label">Quantity</label>
-            <div class="quantity-controls">
-              <button class="quantity-btn" id="decreaseBtn" aria-label="Decrease quantity">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-              </button>
-              <input
-                type="number"
-                class="quantity-input"
-                id="quantityInput"
-                value="1"
-                min="1"
-                aria-label="Quantity"
-              />
-              <button class="quantity-btn" id="increaseBtn" aria-label="Increase quantity">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Action Buttons -->
-          <div class="action-buttons">
-            <button class="btn btn-primary" id="addToCartBtn">
-            
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M3 3h2l.4 2m0 0h13.2l-1.6 8H6.4m0-8l1.2 6m0 0h8m-8 0L5 17m4-4a1 1 0 100 2 1 1 0 000-2zm9 0a1 1 0 100 2 1 1 0 000-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Add to cart
-            </a>
-            </button>
-
-            <a
-              class="btn btn-success"
-              id="buyNowBtn"
-              href="https://t.me/cushionskin"
-              target="_blank"
-              rel="noopener noreferrer"
-              role="button"
-              aria-label="Buy it now"
-              style="text-decoration: none;"
-            >
-              Buy it now
-            </a>
-          </div>
-
-          <!-- Bulk Pricing -->
-          <div class="bulk-pricing">
-            <div class="bulk-pricing-header">
-              <span class="star"></span>
-              <span class="bulk-pricing-title">Buy More, Save More!</span>
-              <span class="star"></span>
-            </div>
-
-            <div class="pricing-table">
-              <div class="pricing-table-header">
-                <div>Quantity</div>
-                <div>Discount</div>
-                <div>Price Each</div>
-              </div>
-
-              <div class="pricing-row" data-min-qty="20">
-                <div class="qty-text">Buy 20+</div>
-                <div>
-                  <span class="discount-badge discount-2">2%</span>
-                </div>
-                <div class="price-text">$13.23 USD</div>
-              </div>
-
-              <div class="pricing-row" data-min-qty="50">
-                <div class="qty-text">Buy 50+</div>
-                <div>
-                  <span class="discount-badge discount-3">3%</span>
-                </div>
-                <div class="price-text">$13.09 USD</div>
-              </div>
-
-              <div class="pricing-row" data-min-qty="100">
-                <div class="qty-text">Buy 100+</div>
-                <div>
-                  <span class="discount-badge discount-4">4%</span>
-                </div>
-                <div class="price-text">$12.96 USD</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Total Price Display -->
-          <div class="total-section" id="totalSection">
-            <div class="total-row">
-              <span>Subtotal:</span>
-              <span id="subtotal">$13.50</span>
-            </div>
-            <div class="total-row discount-applied" id="discountRow" style="display: none;">
-              <span>Discount:</span>
-              <span id="discountAmount">-$0.00</span>
-            </div>
-            <div class="total-row total-final">
-              <span>Total:</span>
-              <span id="totalPrice">$13.50</span>
+        <!-- Lacto-Fit Product Card -->
+        <div class="product-card animate-fade-in-up delay-1">
+          <img src="src/img/lactofitslim.jpg" alt="Lacto-Fit Probiotics Slim" class="product-card-image">
+          <div class="product-card-content">
+            <h3 class="product-card-title">LACTO-FIT PROBIOTICS SLIM</h3>
+            <p class="product-card-description">Advanced probiotic formula with 60 sticks. Designed to support gut health and promote a balanced digestive system.</p>
+            <div class="product-card-price">$13.50</div>
+            <div class="product-card-actions">
+              <a href="product/lacto-fit.html" class="btn-card btn-card-primary">View Details</a>
+              <a href="https://t.me/cushionskin" target="_blank" class="btn-card btn-card-secondary">Buy Now</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </main>
+  </section>
 
-  <script src="src/script.js" defer></script>
- </body>
+  <!-- Features Section -->
+ 
 
- </html>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>About</h4>
+          <p>Quality products from Cushion Skin. Fast shipping and secure checkout.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <nav class="footer-nav" aria-label="Footer">
+            <a href="#">Home</a><br />
+            <a href="#products">Products</a><br />
+          </nav>
+        </div>
+        <div class="footer-col footer-nav">
+          <h4>Support</h4>
+          <p><a href="https://www.instagram.com/cushionskin?igsh=ejBnYTBld2JyYTcw">Instagram: @cushionskin</a></p>
+          <p><a href="https://www.facebook.com/share/1EXCnVjgHw/">Facebook: Cushion Skin</a></p>
+          <p><a href="https://t.me/cushionskin">Telegram: @cushionskin</a></p>
+        </div>
+      </div>
 
+      <div class="footer-bottom">
+        <small>© <span id="year"></span> Cushion Skin. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set dynamic year
+    document.addEventListener('DOMContentLoaded', () => {
+      const y = new Date().getFullYear();
+      const el = document.getElementById('year');
+      if (el) el.textContent = y;
+      
+      // Add animation classes to elements when they come into view
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in-up');
+          }
+        });
+      }, observerOptions);
+      
+      // Observe elements that should animate when scrolled into view
+      document.querySelectorAll('.section-title, .product-card, .feature-card').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
