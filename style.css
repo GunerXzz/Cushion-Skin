@@ -630,7 +630,7 @@ img {
 }
 
 .price-label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--color-text-secondary);
   text-transform: uppercase;
@@ -1030,3 +1030,4 @@ img {
 .product-layout {
   animation: fadeInUp 0.5s ease-out;
 }
+
