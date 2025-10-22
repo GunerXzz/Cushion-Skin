@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUNGSAEMMOOL Essential Mool Cream | Cushion Skin</title>
+    <link rel="icon" href="../src/img/logo.jpg" type="image/jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display.swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo" aria-label="Cushion Skin Homepage">
+                    <span class="logo-text">Cushion Skin Official</span>
+                </a>
+                <nav class="nav" aria-label="Primary">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="product-layout">
+                <div class="product-image-section">
+                    <div class="product-image-wrapper-long">
+                        <img src="../src/img/jungsaemmool-mool-cream.jpg" alt="JUNGSAEMMOOL Essential Mool Cream 50ml" class="product-image" />
+                    </div>
+                </div>
+
+                <div class="product-details-section">
+                    <h1 class="product-title">JUNGSAEMMOOL Essential Mool Cream 50ml</h1>
+                    <p class="product-description">1 Bottle 50ml / 1.7 oz</p>
+
+                    <div class="product-price">
+                        <span class="price-amount" id="displayPrice" data-base-price="69.99">$69.99
+                            <span class="price-currency">USD</span>
+                            <span class="price-per">/ 1 bottle</span>
+                        </span>
+                        
+                    </div>
+
+                    <div class="quantity-section">
+                        <label class="quantity-label">Quantity</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" id="decreaseBtn" aria-label="Decrease quantity">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <path d="M3 8h10" />
+                                </svg>
+                            </button>
+                            <input type="number" class="quantity-input" id="quantityInput" value="1" min="1" aria-label="Quantity" />
+                            <button class="quantity-btn" id="increaseBtn" aria-label="Increase quantity">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <path d="M8 3v10M3 8h10" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="addToCartBtn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3h2l.4 2m0 0h13.2l-1.6 8H6.4m0-8l1.2 6m0 0h8m-8 0L5 17m4-4a1 1 0 100 2 1 1 0 000-2zm9 0a1 1 0 100 2 1 1 0 000-2z" />
+                            </svg>
+                            Add to cart
+                        </button>
+                        <a class="btn btn-secondary" id="buyNowBtn" href="https://t.me/cushionskin" target="_blank" rel="noopener noreferrer" role="button" aria-label="Buy it now">
+                            Buy it now
+                        </a>
+                    </div>
+
+                    <div class="total-section" id="totalSection">
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$69.99</span>
+                        </div>
+                        <div class="total-row discount-applied" id="discountRow" style="display: none;">
+                            <span>Discount:</span>
+                            <span id="discountAmount">-$0.00</span>
+                        </div>
+                        <div class="total-row total-final">
+                            <span>Total:</span>
+                            <span id="totalPrice">$69.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../src/script.js" defer></script>
+</body>
+</html>
