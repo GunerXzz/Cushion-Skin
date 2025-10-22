@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cushion Skin — Premium Cosmetic Products</title>
-  <link rel="icon" href="src/img/logo.jpg" type="image/jpeg">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="src/style.css">
-  </head>
+    <link rel="icon" href="./src/img/logo.jpg" type="image/jpeg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display.swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <!-- Header -->
   <header class="header">
     <div class="container header-content">
-      <div class="logo" aria-hidden="true">
+      <a href="index.html" class="logo" aria-label="Cushion Skin Homepage">
         <span class="logo-text">Cushion Skin Official</span>
-      </div>
+      </a>
       <nav class="nav" aria-label="Primary">
-        <a href="#" class="nav-link">Home</a>
+        <a href="index.html" class="nav-link active">Home</a>
         <a href="#products" class="nav-link">Products</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-bg"></div>
+  <section class="hero gradient_bg">
+    <div class="hero-bg" style="background-image: url('src/img/hero-bg.jpg');"></div>
     <div class="hero-content">
       <h1 class="hero-title animate-fade-in-up">Premium Health & Wellness</h1>
       <p class="hero-subtitle animate-fade-in-up delay-1">Discover our carefully crafted products designed to enhance your well-being and vitality</p>
@@ -32,46 +34,104 @@
     </div>
   </section>
 
-  <!-- Products Section -->
   <section id="products" class="products-section">
     <div class="container">
       <h2 class="section-title animate-fade-in-up">Our Products</h2>
       <div class="products-grid">
-        <!-- Foodology Product Card -->
         <div class="product-card animate-fade-in-up">
-          <img src="src/img/foodology.jpg" alt="Foodology product" class="product-card-image">
+          <a href="./product/foodology.html" class="product-card-image-link">
+            <img src="src/img/foodology.jpg" alt="Foodology product" class="product-card-image">
+          </a>
           <div class="product-card-content">
             <h3 class="product-card-title">FOODOLOGY</h3>
             <p class="product-card-description">Premium health supplement in convenient 10-pouch packaging. Formulated to support digestive health and overall wellness.</p>
-            <div class="product-card-price">$9.99</div>
+            <div class="product-card-price">$17.99</div>
             <div class="product-card-actions">
-              <a href="./foodology.html" class="btn-card btn-card-primary">View Details</a>
+              <a href="./product/foodology.html" class="btn-card btn-card-primary">View Details</a>
               <a href="https://t.me/cushionskin" target="_blank" class="btn-card btn-card-secondary">Buy Now</a>
             </div>
           </div>
         </div>
 
-        <!-- Lacto-Fit Product Card -->
         <div class="product-card animate-fade-in-up delay-1">
-          <img src="src/img/lactofitslim.jpg" alt="Lacto-Fit Probiotics Slim" class="product-card-image">
+           <a href="./product/lacto-fit.html" class="product-card-image-link">
+            <img src="src/img/lactofitslim.jpg" alt="Lacto-Fit Probiotics Slim" class="product-card-image">
+           </a>
           <div class="product-card-content">
             <h3 class="product-card-title">LACTO-FIT PROBIOTICS SLIM</h3>
             <p class="product-card-description">Advanced probiotic formula with 60 sticks. Designed to support gut health and promote a balanced digestive system.</p>
             <div class="product-card-price">$13.50</div>
             <div class="product-card-actions">
-              <a href="./lacto-fit.html" class="btn-card btn-card-primary">View Details</a>
+              <a href="./product/lacto-fit.html" class="btn-card btn-card-primary">View Details</a>
               <a href="https://t.me/cushionskin" target="_blank" class="btn-card btn-card-secondary">Buy Now</a>
             </div>
           </div>
         </div>
+
+        <div class="product-card animate-fade-in-up delay-2">
+            <a href="./product/soy-face-clenser.html" class="product-card-image-link">
+             <img src="src/img/soy-face-clenser.jpg" alt="Soy Face Clenser" class="product-card-image">
+            </a>
+           <div class="product-card-content">
+             <h3 class="product-card-title">SOY FACE CLENSER</h3>
+             <p class="product-card-description">A gentle, pH-balanced gel cleanser that melts away makeup and impurities for a clean, soft complexion.</p>
+             <div class="product-card-price">$41.99</div>
+             <div class="product-card-actions">
+               <a href="./product/soy-face-clenser.html" class="btn-card btn-card-primary">View Details</a>
+               <a href="https://t.me/cushionskin" target="_blank" class="btn-card btn-card-secondary">Buy Now</a>
+             </div>
+           </div>
+         </div>
+
+        <div class="product-card animate-fade-in-up delay-3">
+            <a href="./product/jungsaemmool-cushion.html" class="product-card-image-link">
+             <img src="src/img/jungsaemmool-cushion.jpg" alt="JUNGSAEMMOOL Masterclass Radiant Cushion Set" class="product-card-image">
+            </a>
+           <div class="product-card-content">
+             <h3 class->JUNGSAEMMOOL Masterclass Radiant Cushion Set</h3>
+             <p class="product-card-description">(1.05 oz. refill included) A high-coverage, long-lasting cushion foundation with a radiant finish.</p>
+             <div class="product-card-price">$33.99</div>
+             <div class="product-card-actions">
+               <a href="./product/jungsaemmool-cushion.html" class="btn-card btn-card-primary">View Details</a>
+               <a href="https://t.me/cushionskin" target="_blank" class="btn-card btn-card-secondary">Buy Now</a>
+             </div>
+           </div>
+         </div>
+
+         <div class="product-card animate-fade-in-up delay-4">
+            <a href="./product/jungsaemmool-mool-cream.html" class="product-card-image-link">
+             <img src="src/img/jungsaemmool-mool-cream.jpg" alt="JUNGSAEMMOOL Essential Mool Cream 50ml" class="product-card-image">
+            </a>
+           <div class="product-card-content">
+             <h3 class="product-card-title">JUNGSAEMMOOL Essential Mool Cream 50ml</h3>
+             <p class="product-card-description">A lightweight, hydrating cream that preps and moisturizes the skin for a flawless makeup base.</p>
+             <div class="product-card-price">$69.99</div>
+             <div class="product-card-actions">
+               <a href="./product/jungsaemmool-mool-cream.html" class="btn-card btn-card-primary">View Details</a>
+               <a href="https://t.me/cushionskin" target="_blank" class="btn-card btn-card-secondary">Buy Now</a>
+             </div>
+           </div>
+         </div>
+
+         <div class="product-card animate-fade-in-up delay-5">
+            <a href="./product/round-lab-sunscreen.html" class="product-card-image-link">
+             <img src="src/img/round-lab-sunscreen.jpg" alt="ROUND LAB Birch Juice Sunscreen 50ml" class="product-card-image">
+            </a>
+           <div class="product-card-content">
+             <h3 class="product-card-title">ROUND LAB Birch Juice Sunscreen 50ml</h3>
+             <p class="product-card-description">A hydrating, lightweight sunscreen with Birch Sap that protects skin from UV rays. (Gift Box option available).</p>
+             <div class="product-card-price">$14.00</div>
+             <div class="product-card-actions">
+               <a href="./product/round-lab-sunscreen.html" class="btn-card btn-card-primary">View Details</a>
+               <a href="https://t.me/cushionskin" target="_blank" class="btn-card btn-card-secondary">Buy Now</a>
+             </div>
+           </div>
+         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Features Section -->
- 
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -82,50 +142,24 @@
         <div class="footer-col">
           <h4>Links</h4>
           <nav class="footer-nav" aria-label="Footer">
-            <a href="#">Home</a><br />
+            <a href="index.html">Home</a><br />
             <a href="#products">Products</a><br />
           </nav>
         </div>
         <div class="footer-col footer-nav">
           <h4>Support</h4>
-          <p><a href="https://www.instagram.com/cushionskin?igsh=ejBnYTBld2JyYTcw">Instagram: @cushionskin</a></p>
-          <p><a href="https://www.facebook.com/share/1EXCnVjgHw/">Facebook: Cushion Skin</a></p>
-          <p><a href="https://t.me/cushionskin">Telegram: @cushionskin</a></p>
+          <p><a href="https://www.instagram.com/cushionskin?igsh=ejBnYTBld2JyYTcw" target="_blank" rel="noopener noreferrer">Instagram: @cushionskin</a></p>
+          <p><a href="https://www.facebook.com/share/1EXCnVjgHw/" target="_blank" rel="noopener noreferrer">Facebook: Cushion Skin</a></p>
+          <p><a href="https://t.me/cushionskin" target="_blank" rel="noopener noreferrer">Telegram: @cushionskin</a></p>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <small>© <span id="year"></span> Cushion Skin. All rights reserved.</small>
+        <small>© <span id="year">2024</span> Cushion Skin. All rights reserved.</small>
       </div>
     </div>
   </footer>
 
-  <script>
-    // Set dynamic year
-    document.addEventListener('DOMContentLoaded', () => {
-      const y = new Date().getFullYear();
-      const el = document.getElementById('year');
-      if (el) el.textContent = y;
-      
-      // Add animation classes to elements when they come into view
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      };
-      
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in-up');
-          }
-        });
-      }, observerOptions);
-      
-      // Observe elements that should animate when scrolled into view
-      document.querySelectorAll('.section-title, .product-card, .feature-card').forEach(el => {
-        observer.observe(el);
-      });
-    });
-  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>

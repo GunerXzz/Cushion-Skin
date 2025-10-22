@@ -5,131 +5,132 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodology | Cushion Skin</title>
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="icon" href="../src/img/logo.jpg" type="image/jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
+                <a href="../index.html" class="logo" aria-label="Cushion Skin Homepage">
                     <span class="logo-text">Cushion Skin Official</span>
-                </div>
+                </a>
                 <nav class="nav" aria-label="Primary">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="../index.html" class="nav-link">Home</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="main">
         <div class="container">
             <div class="product-layout">
-                <!-- Product Image -->
                 <div class="product-image-section">
-                    <div class="product-image-wrapper">
-                        <img src="src/img/foodology.jpg" alt="Lacto-Fit Probiotics Slim" class="product-image" />
+                    <div class="product-image-wrapper-long">
+                        <img src="../src/img/foodology.jpg" alt="Foodology product image" class="product-image" />
                     </div>
                 </div>
 
-                <!-- Product Details -->
                 <div class="product-details-section">
-                    <div class=> </div>
-
                     <h1 class="product-title">FOODOLOGY</h1>
-
                     <p class="product-description">10 POUCH</p>
 
-                    <div class="product-price">
-                        <span class="price-amount" id="displayPrice">$9.99</span>
-                        <span class="price-currency">USD</span>
-                        <span class="price-per">/1</span>
+                    <div class="buy-options" aria-label="Buy option">
+                      <label>
+                        <input type="radio" name="buyOption" value="retail" checked>
+                        <span>Retail</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="buyOption" value="wholesale">
+                        <span>Wholesale</span>
+                      </label>
                     </div>
 
-                    <!-- Quantity Selector -->
+                    <div id="pricing" class="product-price" data-retail="17.99" data-wholesale="14.60" aria-live="polite">
+                        <div class="price-row">
+                          <span class="price-label">Retail</span>
+                          <span class="price-amount retail" id="displayRetail">$17.99</span>
+                          <span class="price-per">/box</span>
+                        </div>
+                        <div class="price-row">
+                          <span class="price-label">Wholesale</span>
+                          <span class="price-amount wholesale" id="displayWholesale">$14.60</span>
+                          <span class="price-per">/boxes (5pcs up)</span>
+                        </div>
+                    </div>
+
                     <div class="quantity-section">
                         <label class="quantity-label">Quantity</label>
                         <div class="quantity-controls">
                             <button class="quantity-btn" id="decreaseBtn" aria-label="Decrease quantity">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M3 8h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <path d="M3 8h10" />
                                 </svg>
                             </button>
-                            <input type="number" class="quantity-input" id="quantityInput" value="1" min="1"
-                                aria-label="Quantity" />
+                            <input type="number" class="quantity-input" id="quantityInput" value="1" min="1" aria-label="Quantity" />
                             <button class="quantity-btn" id="increaseBtn" aria-label="Increase quantity">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <path d="M8 3v10M3 8h10" />
                                 </svg>
                             </button>
                         </div>
                     </div>
 
-                    <!-- Action Buttons -->
                     <div class="action-buttons">
                         <button class="btn btn-primary" id="addToCartBtn">
-
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M3 3h2l.4 2m0 0h13.2l-1.6 8H6.4m0-8l1.2 6m0 0h8m-8 0L5 17m4-4a1 1 0 100 2 1 1 0 000-2zm9 0a1 1 0 100 2 1 1 0 000-2z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3h2l.4 2m0 0h13.2l-1.6 8H6.4m0-8l1.2 6m0 0h8m-8 0L5 17m4-4a1 1 0 100 2 1 1 0 000-2zm9 0a1 1 0 100 2 1 1 0 000-2z" />
                             </svg>
                             Add to cart
                         </button>
-
-                        <a class="btn btn-success" id="buyNowBtn" href="https://t.me/cushionskin" target="_blank"
-                            rel="noopener noreferrer" role="button" aria-label="Buy it now" style="text-decoration: none;">
+                        <a class="btn btn-secondary" id="buyNowBtn" href="https://t.me/cushionskin" target="_blank" rel="noopener noreferrer" role="button" aria-label="Buy it now">
                             Buy it now
                         </a>
                     </div>
 
-                    <!-- Bulk Pricing -->
                     <div class="bulk-pricing">
                         <div class="bulk-pricing-header">
-                            <span class="star"></span>
                             <span class="bulk-pricing-title">Buy More, Save More!</span>
-                            <span class="star"></span>
                         </div>
-
                         <div class="pricing-table">
                             <div class="pricing-table-header">
                                 <div>Quantity</div>
                                 <div>Discount</div>
                                 <div>Price Each</div>
                             </div>
-
-                            <div class="pricing-row" data-min-qty="20">
+                            <div class="pricing-row" data-min-qty="20" data-discount="2">
                                 <div class="qty-text">Buy 20+</div>
-                                <div>
-                                    <span class="discount-badge discount-2">2%</span>
-                                </div>
-                                <div class="price-text">$9.79 USD</div>
+                                <div><span class="discount-badge discount-2">2%</span></div>
+                                <div class="price-text">$14.31 USD</div>
                             </div>
-
-                            <div class="pricing-row" data-min-qty="50">
+                            <div class="pricing-row" data-min-qty="50" data-discount="3">
                                 <div class="qty-text">Buy 50+</div>
-                                <div>
-                                    <span class="discount-badge discount-3">3%</span>
-                                </div>
-                                <div class="price-text">$9.69 USD</div>
+                                <div><span class="discount-badge discount-3">3%</span></div>
+                                <div class="price-text">$14.16 USD</div>    
                             </div>
-
-                            <div class="pricing-row" data-min-qty="100">
+                            <div class="pricing-row" data-min-qty="100" data-discount="4">
                                 <div class="qty-text">Buy 100+</div>
-                                <div>
-                                    <span class="discount-badge discount-4">4%</span>
-                                </div>
-                                <div class="price-text">$9.59 USD</div>
+                                <div><span class="discount-badge discount-4">4%</span></div>
+                                <div class="price-text">$14.02 USD</div>        
+                            </div>
+                            <div class="pricing-row" data-min-qty="150" data-discount="5">
+                                <div class="qty-text">Buy 150+</div>
+                                <div><span class="discount-badge discount-5">5%</span></div>
+                                <div class="price-text">$13.87 USD</div>        
                             </div>
                         </div>
                     </div>
 
-                    <!-- Total Price Display -->
                     <div class="total-section" id="totalSection">
                         <div class="total-row">
                             <span>Subtotal:</span>
-                            <span id="subtotal">$9.99</span>
+                            <span id="subtotal">17.99$</span>
                         </div>
                         <div class="total-row discount-applied" id="discountRow" style="display: none;">
                             <span>Discount:</span>
@@ -137,7 +138,7 @@
                         </div>
                         <div class="total-row total-final">
                             <span>Total:</span>
-                            <span id="totalPrice">$9.99</span>
+                            <span id="totalPrice">17.99$</span>
                         </div>
                     </div>
                 </div>
@@ -145,7 +146,6 @@
         </div>
     </main>
 
-    <script src="src/script.js" defer></script>
+    <script src="../src/script.js" defer></script>
 </body>
-
 </html>

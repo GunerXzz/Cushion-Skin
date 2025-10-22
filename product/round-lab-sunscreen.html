@@ -4,21 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lacto-Fit Probiotics | Cushion Skin</title>
-    <!-- Favicon -->
+    <title>ROUND LAB Birch Juice Sunscreen | Cushion Skin</title>
     <link rel="icon" href="../src/img/logo.jpg" type="image/jpeg">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display.swap" rel="stylesheet">
     
-    <!-- Single Stylesheet -->
     <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -32,33 +28,43 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="main">
         <div class="container">
             <div class="product-layout">
-                <!-- Product Image -->  
                 <div class="product-image-section">
-                    <div class="product-image-wrapper-long">
-                        <img src="../src/img/lactofitslim.jpg" alt="Lacto-Fit Probiotics Slim 60 stick box" class="product-image" />
+                    <div class="product-image-wrapper">
+                         <img src="../src/img/round-lab-sunscreen.jpg" alt="ROUND LAB Birch Juice Sunscreen 50ml" class="product-image" />
                     </div>
                 </div>
 
-                <!-- Product Details -->
                 <div class="product-details-section">
-                    <h1 class="product-title">LACTO-FIT PROBIOTICS SLIM</h1>
-                    <p class="product-description">60 Sticks</p>
+                    <h1 class="product-title">ROUND LAB Birch Juice Sunscreen 50ml</h1>
+                    <p class="product-description">1 pc (50 ml)</p>
 
-                    <!-- This page has a simpler price display -->
-                    <div class="product-price">
-                        <!-- I've added 'data-base-price' for the script to work -->
-                        <span class="price-amount" id="displayPrice" data-base-price="13.50">$13.50
-                            <span class="price-currency">USD</span>
-                            <span class="price-per">/ 1</span>
-                        </span>
-                        
+                    <div class="buy-options" aria-label="Buy option">
+                      <label>
+                        <input type="radio" name="buyOption" value="retail" checked>
+                        <span>Standard (50ml)</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="buyOption" value="wholesale">
+                        <span>Gift Box (50ml)</span>
+                      </label>
                     </div>
 
-                    <!-- Quantity Selector -->
+                    <div id="pricing" class="product-price" data-retail="14.00" data-wholesale="16.00" aria-live="polite">
+                        <div class="price-row">
+                          <span class="price-label">Standard</span>
+                          <span class="price-amount retail" id="displayRetail">$14.00</span>
+                          <span class="price-per">/1 pc</span>
+                        </div>
+                        <div class="price-row">
+                          <span class="price-label">Gift Box</span>
+                          <span class="price-amount wholesale" id="displayWholesale">$16.00</span>
+                          <span class="price-per">/1 pc</span>
+                        </div>
+                    </div>
+
                     <div class="quantity-section">
                         <label class="quantity-label">Quantity</label>
                         <div class="quantity-controls">
@@ -76,7 +82,6 @@
                         </div>
                     </div>
 
-                    <!-- Action Buttons -->
                     <div class="action-buttons">
                         <button class="btn btn-primary" id="addToCartBtn">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -89,41 +94,10 @@
                         </a>
                     </div>
 
-                    <!-- Bulk Pricing -->
-                    <div class="bulk-pricing">
-                        <div class="bulk-pricing-header">
-                            <span class="bulk-pricing-title">Buy More, Save More!</span>
-                        </div>
-                        <div class="pricing-table">
-                            <div class="pricing-table-header">
-                                <div>Quantity</div>
-                                <div>Discount</div>
-                                <div>Price Each</div>
-                            </div>
-                            <!-- Note: The prices here are static, but the discount % is used by the script -->
-                            <div class="pricing-row" data-min-qty="20" data-discount="2">
-                                <div class="qty-text">Buy 20+</div>
-                                <div><span class="discount-badge discount-2">2%</span></div>
-                                <div class="price-text">$13.23 USD</div>
-                            </div>
-                            <div class="pricing-row" data-min-qty="50" data-discount="3">
-                                <div class="qty-text">Buy 50+</div>
-                                <div><span class="discount-badge discount-3">3%</span></div>
-                                <div class="price-text">$13.09 USD</div>
-                            </div>
-                            <div class="pricing-row" data-min-qty="100" data-discount="4">
-                                <div class="qty-text">Buy 100+</div>
-                                <div><span class="discount-badge discount-4">4%</span></div>
-                                <div class="price-text">$12.96 USD</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Total Price Display -->
                     <div class="total-section" id="totalSection">
                         <div class="total-row">
                             <span>Subtotal:</span>
-                            <span id="subtotal">$13.50</span>
+                            <span id="subtotal">$14.00</span>
                         </div>
                         <div class="total-row discount-applied" id="discountRow" style="display: none;">
                             <span>Discount:</span>
@@ -131,7 +105,7 @@
                         </div>
                         <div class="total-row total-final">
                             <span>Total:</span>
-                            <span id="totalPrice">$13.50</span>
+                            <span id="totalPrice">$14.00</span>
                         </div>
                     </div>
                 </div>
@@ -139,7 +113,6 @@
         </div>
     </main>
 
-    <!-- Single Script File -->
     <script src="../src/script.js" defer></script>
 </body>
 </html>
