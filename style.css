@@ -204,16 +204,16 @@ img {
 }
 
 .gradient_bg {
-	background: linear-gradient(-45deg, #fffdfd, #f778a9, #e7a4e9, #ce3eb8);
+	background: linear-gradient(-45deg, #fffdfd, #faadcb, #e7a4e9, #ce3eb8);
 	background-size: 400% 400%;
-	-webkit-animation: gradient 15s ease infinite;
-	        animation: gradient 15s ease infinite;
+	-webkit-animation: gradient 10s ease infinite;
+	        animation: gradient 10s ease infinite;
 	height: 60vh;
 }
 
 .gradient_bg:hover{
-   -webkit-animation: gradient 15s ease infinite;
-   animation: gradient 15s ease infinite;
+   -webkit-animation: gradient 10s ease infinite;
+   animation: gradient 10s ease infinite;
 }
 
 @-webkit-keyframes gradient {
