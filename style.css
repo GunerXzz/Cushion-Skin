@@ -650,6 +650,23 @@ img {
   font-size: 1.5rem;
 }
 
+@media (max-width: 640px) {
+
+  .price-label {
+    font-size: 0.7rem;
+  }
+
+  .price-amount {
+    font-size: 2rem;
+  }
+
+  .price-amount.retail {
+    font-size: 1.25rem;
+  }
+
+
+}
+
 /* Simple product page price */
 #displayPrice.price-amount {
   font-size: 2.5rem;
